@@ -1,0 +1,473 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+img{
+    max-width: 100%;
+}
+section{
+    margin-top: 100px;
+}
+/* heaer start */
+header{
+    background-image: url(../images/dawn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1px 50px 90px 50px;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+/* navbar */
+.navbar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0px 50px 10px 50px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; 
+    transition: background-color 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgb(0, 0, 0);
+    /* left: 0%;
+    right: 0%; */
+    padding: 20px 50px;
+}
+
+.logo{}
+.logo h4{
+    margin: 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+}
+.logo h4 span{
+    font-weight: 100;
+}
+nav{}
+nav ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+nav ul li{
+    margin:  0 0 0 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+/* banner section */
+.banner{
+    margin: 150px 0 60px;
+    text-align: center;
+    color: white;
+}
+.banner h3{
+    font-size: 35px;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.banner span{
+    background: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.banner h1{
+    font-size: 78px;
+}
+.banner button{
+    padding: 13px 30px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    background: #ff0000db;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid red;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+.banner button:hover{
+    letter-spacing: 2px;
+    background: #ff000000;
+    color: white;
+}
+
+/* ==== upcomming-event start */
+.upcomming-event{
+   margin: 0 100px; 
+   text-align: center;
+}
+.event{
+    margin:  0 0 50px 0;
+}
+.event h5{
+    font-size: 40px;
+    margin:  0 0 0 0;
+}
+.event span{
+    background: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.event-main{
+    display: flex;
+}
+.event-item{
+    padding: 20px;
+}
+.event-item img{
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 12px 12px 2.6px 0px;
+}
+.event-item h6{
+    font-size: 18px;
+    margin: 20px 0 0 0;
+}
+.event-item p{}
+.event-item a{
+    color: red;
+    letter-spacing: 1px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/* EXPLORE THE WORLD SECTION */
+.world{
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../images/father.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 50px;
+    background-blend-mode: multiply;
+    /* background-color:; */
+    background-color: #0000ff87;
+}
+.world-item{
+    width: 50%;
+    color: white;
+}
+.world-item h1{
+    font-size: 60px;
+    margin: 0;
+}
+.world-item span{
+    background: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.world-item p{
+    margin: 30px 0;
+}
+.world-item a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* ====tours section==== */
+.tours{
+    margin: 0 70px;
+    display: flex;
+}
+.tour-item{
+    width: 33.33%;
+    padding: 15px;
+}
+.tour-item h4{
+    margin: 0 0 0 0;
+    font-size: 24px;
+}
+.tour-item span{
+    background: red;
+    height: 5px;
+    width: 150px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.tour-item p{}
+.tour-item a{
+    color: red;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.tour-item img{}
+
+.img-one{
+    height: 260px;
+    margin: 0 0 20px 0;
+    object-fit: cover;
+}
+.img-two{
+    height:350px;
+    margin: 0 0 20px 0;
+    object-fit: cover;
+}
+
+/* footer  */
+footer{
+    background-color: black;
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+.fab{
+    font-size: 25px;
+    margin: 0 0 0 20px;
+}
+
+
+/* samall and large mobile device, small mobile landscape */
+@media only screen and (max-width:668px){
+    section{
+        margin-top: 50px;
+    }
+    
+    /* navbar */
+    .navbar{
+        padding: 0px 10px 15px 10px;
+        display: block;
+    }
+
+    .navbar.scrolled {
+        background-color:blue;
+    }
+    .logo h4{
+        font-size: 20px;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 5px 0 5px 8px;
+    }
+    nav ul li a{
+        font-weight: 500;
+    }
+
+    
+    /* banner section */
+    .banner{
+        margin: 150px 0 40px;
+    }
+    .banner h3{
+        font-size: 20px;
+    }
+    
+    .banner h1{
+        font-size: 35px;
+    }
+    .banner button{
+        padding: 10px 23px;
+        font-size: 16px;
+    }
+
+    /* ==== upcomming-event starrt */
+    .upcomming-event{
+        margin: 0 8px; 
+    }
+    .event{
+        margin:  0 0 20px 0;
+    }
+    .event h5{
+        font-size: 25px;
+
+    }
+    .event span{
+        height: 3px;
+    }
+    
+    .event-main{
+        display: block;
+    }
+    .event-item{
+        padding: 10px;
+    }
+    .event-item img{
+        height: 250px;
+        width: auto;
+       
+    }
+
+    
+    /* EXPLORE THE WORLD SECTION */
+    .world{
+        display: block;
+        padding: 50px 10px;
+    }
+    .world-item{
+        width: 100%;
+        color: white;
+    }
+    .world-item h1{
+        font-size: 40px;
+    }
+    .world-item span{
+        height: 3px;
+    }
+    .world-item p{
+        margin: 20px 0;
+    }
+    .world-item a{
+        font-size: 18px;
+    }
+}
+
+/* large mobiel landscape , tab,*/
+@media only screen and (min-width:669px) and (max-width:768px){
+    section{
+        margin-top: 60px;
+    }
+
+     /* navbar */
+     .navbar{
+        padding: 0px 10px 15px 10px;
+        display: block;
+    }
+   
+    .logo h4{
+        font-size: 22px;
+        margin: 10px 0 0 0;
+        text-align: center;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    nav ul li{
+        margin: 5px 0 5px 8px;
+    }
+    nav ul li a{
+        font-weight: 500;
+    }
+
+    /* banner section */
+    .banner{
+        margin: 150px 0 60px;
+    }
+    .banner h3{
+        font-size: 25px;
+    }
+    
+    .banner h1{
+        font-size: 45px;
+    }
+    .banner button{
+        padding: 12px 27px;
+        font-size: 17px;
+    }
+
+
+    /* ==== upcomming-event starrt */
+    .upcomming-event{
+        margin: 0 15px; 
+    }
+    .event{
+        margin:  0 0 30px 0;
+    }
+    .event h5{
+        font-size: 25px;
+
+    }
+    .event-item{
+        padding: 15px;
+    }
+    .event-item img{
+        height: 300px;
+    }
+
+    /* EXPLORE THE WORLD SECTION */
+    .world{
+        display: block;
+        padding: 60px 10px;
+    }
+    .world-item{
+        width: 100%;
+    }
+    .world-item h1{
+        font-size: 50px;
+    }
+    .world-item p{
+        margin: 20px 0;
+    }
+    .world-item a{
+        font-size: 18px;
+    }
+   
+   
+}
+
+/* tab landScape / small desktop */
+@media only screen and (min-width:769px) and (max-width:992px) {
+    section{
+        margin-top: 70px;
+    }
+
+    /* banner section */
+   
+    .banner h3{
+        font-size: 30px;
+    }
+    
+    .banner h1{
+        font-size: 55px;
+    }
+
+    /* ==== upcomming-event starrt */
+    .upcomming-event{
+        margin: 0 25px; 
+    }
+    .event-item img{
+        height: 350px;
+    }
+    
+    /* EXPLORE THE WORLD SECTION */
+    .world-item h1{
+        font-size: 55px;
+    }
+   
+}
+
+/* small laptop */
+@media only screen and (min-width:993px) and (max-width:1024px) {
+    section{
+        margin-top: 80px;
+    }
+}
+
+/* large laptop and large monitor
+@media only screen and (min-width:1025px) and (max-width:1440px) {
+    .navbar{
+        background-color: purple;
+    }
+} */
